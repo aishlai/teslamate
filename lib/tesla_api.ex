@@ -5,7 +5,7 @@ defmodule TeslaApi do
 
   adapter Tesla.Adapter.Finch, name: TeslaMate.HTTP, receive_timeout: 35_000
 
-  plug Tesla.Middleware.BaseUrl, "https://owner-api.teslamotors.com"
+  plug Tesla.Middleware.BaseUrl, "https://owner-api.vn.cloud.tesla.cn"
   plug Tesla.Middleware.Headers, [{"user-agent", "TeslaMate/#{@version}"}]
   plug Tesla.Middleware.JSON
   plug TeslaApi.Middleware.TokenAuth
