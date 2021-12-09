@@ -1,6 +1,6 @@
 defmodule TeslaMate.HTTP do
   @pools %{
-    "https://owner-api.teslamotors.com" => [size: 10],
+    "https://owner-api.vn.cloud.tesla.cn" => [size: 10],
     "https://nominatim.openstreetmap.org" => [size: 3],
     "https://api.github.com" => [size: 1],
     :default => [size: 5]
