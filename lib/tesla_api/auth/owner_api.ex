@@ -15,7 +15,7 @@ defmodule TeslaApi.Auth.OwnerApi do
 
     headers = [{"Authorization", "Bearer #{sso_auth.token}"}]
 
-    case post("https://owner-api.teslamotors.com/oauth/token", data, headers: headers) do
+    case post("https://owner-api.vn.cloud.tesla.cn/oauth/token", data, headers: headers) do
       {:ok, %Tesla.Env{status: 200, body: body}} ->
         auth = %Auth{
           token: body["access_token"],
